@@ -4,11 +4,11 @@ account = input()
 if(account=='yes'):
     print('What is your username?')
     accountName = input()
-    if(accountName == Kailan):
+    if(accountName == 'Kailan'):
         print('What is your password')
         accountPassword = input()
-        if(accountPassword == ksh1234):
-            print('welcome'+ accountName)
+        if(accountPassword == 'ksh1234'):
+            print('welcome '+ accountName)
         else:
             print('Wrong Password')
     else:
