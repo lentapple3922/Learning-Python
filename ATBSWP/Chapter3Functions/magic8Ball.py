@@ -25,14 +25,15 @@ def getAnswer(answerNumber):
 # I added this sepretly from the book. The book only does what
 #is in the if Yes statment
 while(True):
-    print('Sping the 8 ball, Yes or no')
+    print('Spin the 8 ball, Yes or no')
     userInput = input()
-    if userInput == 'Yes' or 'yes':
-        r = random.randint(1, 9)
-        fortune = getAnswer(r)
-        print(fortune)
-    elif userInput == 'no' or 'No':
+    if userInput == 'Yes' or userInput == 'yes':
+        #r = random.randint(1, 9)
+        #fortune = getAnswer(r)
+        #print(fortune)
+        print(getAnswer(random.randint(1,9))) #This line is a consolidation of the last three lines
+    elif userInput == 'No' or userInput == 'no':
         break
-    #else:
-        #print('Not right input, try again')
-        #continue
+    else:
+        print('Not right input, try again')
+        continue
